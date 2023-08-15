@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "0.46.0",
   "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
   "runs": [
     {
@@ -37,7 +37,7 @@
               }
             }
           ],
-          "version": "0.43.1"
+          "version": "0.46.0"
         }
       },
       "results": [
