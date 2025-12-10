@@ -1,5 +1,6 @@
 {
   "SchemaVersion": 2,
+  "ReportID": "019b071d-d630-70f8-b2ed-d71a841604b0",
   "ArtifactName": "test/data/with-tf-vars/main.tf",
   "ArtifactType": "filesystem",
   "Results": [

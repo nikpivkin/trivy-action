@@ -1,5 +1,6 @@
 {
   "SchemaVersion": 2,
+  "ReportID": "019b071d-c1d8-774c-912d-ac7dd8dbf031",
   "ArtifactName": "test/data/config-scan",
   "ArtifactType": "filesystem",
   "Results": [

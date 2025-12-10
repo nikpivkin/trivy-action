@@ -1,5 +1,7 @@
 {
   "SchemaVersion": 2,
+  "ReportID": "019b071d-9f01-7017-9799-2f8ae7738b7e",
+  "ArtifactID": "sha256:79ce4c2f8371bef1ce2a321518d3136bc1bd8f3c307ed679944a38e7cbd76c14",
   "ArtifactName": "https://github.com/krol3/demo-trivy/",
   "ArtifactType": "repository",
   "Metadata": {
@@ -11,6 +13,1559 @@
     "Committer": "carolina valencia <krol3@users.noreply.github.com>"
   },
   "Results": [
+    {
+      "Target": "demo-fs/package-lock.json",
+      "Class": "lang-pkgs",
+      "Type": "npm",
+      "Packages": [
+        {
+          "ID": "argparse@1.0.10",
+          "Name": "argparse",
+          "Identifier": {
+            "PURL": "pkg:npm/argparse@1.0.10",
+            "UID": "63091116391e9d96"
+          },
+          "Version": "1.0.10",
+          "DependsOn": [
+            "sprintf-js@1.0.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 58,
+              "EndLine": 65
+            }
+          ]
+        },
+        {
+          "ID": "asn1@0.2.4",
+          "Name": "asn1",
+          "Identifier": {
+            "PURL": "pkg:npm/asn1@0.2.4",
+            "UID": "6f8cfe82f4b412b"
+          },
+          "Version": "0.2.4",
+          "DependsOn": [
+            "safer-buffer@2.1.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 114,
+              "EndLine": 121
+            }
+          ]
+        },
+        {
+          "ID": "assert-plus@1.0.0",
+          "Name": "assert-plus",
+          "Identifier": {
+            "PURL": "pkg:npm/assert-plus@1.0.0",
+            "UID": "16861dd8badb8e9d"
+          },
+          "Version": "1.0.0",
+          "Locations": [
+            {
+              "StartLine": 122,
+              "EndLine": 126
+            }
+          ]
+        },
+        {
+          "ID": "balanced-match@1.0.0",
+          "Name": "balanced-match",
+          "Identifier": {
+            "PURL": "pkg:npm/balanced-match@1.0.0",
+            "UID": "5d805b1b22bb7c8a"
+          },
+          "Version": "1.0.0",
+          "Locations": [
+            {
+              "StartLine": 139,
+              "EndLine": 143
+            }
+          ]
+        },
+        {
+          "ID": "bcrypt-pbkdf@1.0.2",
+          "Name": "bcrypt-pbkdf",
+          "Identifier": {
+            "PURL": "pkg:npm/bcrypt-pbkdf@1.0.2",
+            "UID": "dc6f364255a38963"
+          },
+          "Version": "1.0.2",
+          "DependsOn": [
+            "tweetnacl@0.14.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 199,
+              "EndLine": 206
+            }
+          ]
+        },
+        {
+          "ID": "brace-expansion@1.1.11",
+          "Name": "brace-expansion",
+          "Identifier": {
+            "PURL": "pkg:npm/brace-expansion@1.1.11",
+            "UID": "12375312f7472650"
+          },
+          "Version": "1.1.11",
+          "DependsOn": [
+            "balanced-match@1.0.0",
+            "concat-map@0.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 213,
+              "EndLine": 221
+            }
+          ]
+        },
+        {
+          "ID": "bunyan@1.8.12",
+          "Name": "bunyan",
+          "Identifier": {
+            "PURL": "pkg:npm/bunyan@1.8.12",
+            "UID": "38d9fb0ba2eaedf3"
+          },
+          "Version": "1.8.12",
+          "DependsOn": [
+            "dtrace-provider@0.8.7",
+            "moment@2.22.2",
+            "mv@2.1.1",
+            "safe-json-stringify@1.2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 251,
+              "EndLine": 261
+            }
+          ]
+        },
+        {
+          "ID": "concat-map@0.0.1",
+          "Name": "concat-map",
+          "Identifier": {
+            "PURL": "pkg:npm/concat-map@0.0.1",
+            "UID": "f9aeb04c91cc3398"
+          },
+          "Version": "0.0.1",
+          "Locations": [
+            {
+              "StartLine": 349,
+              "EndLine": 353
+            }
+          ]
+        },
+        {
+          "ID": "core-util-is@1.0.2",
+          "Name": "core-util-is",
+          "Identifier": {
+            "PURL": "pkg:npm/core-util-is@1.0.2",
+            "UID": "a80a3774843baf76"
+          },
+          "Version": "1.0.2",
+          "Locations": [
+            {
+              "StartLine": 360,
+              "EndLine": 364
+            }
+          ]
+        },
+        {
+          "ID": "csv@1.2.1",
+          "Name": "csv",
+          "Identifier": {
+            "PURL": "pkg:npm/csv@1.2.1",
+            "UID": "17876458da112dba"
+          },
+          "Version": "1.2.1",
+          "DependsOn": [
+            "csv-generate@1.1.2",
+            "csv-parse@1.3.3",
+            "csv-stringify@1.1.2",
+            "stream-transform@0.2.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 365,
+              "EndLine": 375
+            }
+          ]
+        },
+        {
+          "ID": "csv-generate@1.1.2",
+          "Name": "csv-generate",
+          "Identifier": {
+            "PURL": "pkg:npm/csv-generate@1.1.2",
+            "UID": "9975b1b77c96c7c5"
+          },
+          "Version": "1.1.2",
+          "Locations": [
+            {
+              "StartLine": 376,
+              "EndLine": 380
+            }
+          ]
+        },
+        {
+          "ID": "csv-parse@1.3.3",
+          "Name": "csv-parse",
+          "Identifier": {
+            "PURL": "pkg:npm/csv-parse@1.3.3",
+            "UID": "f3b8a0cf8119e2e3"
+          },
+          "Version": "1.3.3",
+          "Locations": [
+            {
+              "StartLine": 381,
+              "EndLine": 385
+            }
+          ]
+        },
+        {
+          "ID": "csv-stringify@1.1.2",
+          "Name": "csv-stringify",
+          "Identifier": {
+            "PURL": "pkg:npm/csv-stringify@1.1.2",
+            "UID": "595bedb3ac2d9440"
+          },
+          "Version": "1.1.2",
+          "DependsOn": [
+            "lodash.get@4.4.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 386,
+              "EndLine": 393
+            }
+          ]
+        },
+        {
+          "ID": "dashdash@1.14.1",
+          "Name": "dashdash",
+          "Identifier": {
+            "PURL": "pkg:npm/dashdash@1.14.1",
+            "UID": "3e5ab6e593580811"
+          },
+          "Version": "1.14.1",
+          "DependsOn": [
+            "assert-plus@1.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 394,
+              "EndLine": 401
+            }
+          ]
+        },
+        {
+          "ID": "debug@2.6.9",
+          "Name": "debug",
+          "Identifier": {
+            "PURL": "pkg:npm/debug@2.6.9",
+            "UID": "6fa2f684badc46c2"
+          },
+          "Version": "2.6.9",
+          "DependsOn": [
+            "ms@2.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 601,
+              "EndLine": 609
+            },
+            {
+              "StartLine": 2342,
+              "EndLine": 2350
+            },
+            {
+              "StartLine": 2486,
+              "EndLine": 2493
+            },
+            {
+              "StartLine": 2510,
+              "EndLine": 2517
+            }
+          ]
+        },
+        {
+          "ID": "debug@3.1.0",
+          "Name": "debug",
+          "Identifier": {
+            "PURL": "pkg:npm/debug@3.1.0",
+            "UID": "1aa038e3d1b46a3"
+          },
+          "Version": "3.1.0",
+          "DependsOn": [
+            "ms@2.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 408,
+              "EndLine": 415
+            }
+          ]
+        },
+        {
+          "ID": "detect-node@2.0.4",
+          "Name": "detect-node",
+          "Identifier": {
+            "PURL": "pkg:npm/detect-node@2.0.4",
+            "UID": "bb95dfd320cd6fa7"
+          },
+          "Version": "2.0.4",
+          "Locations": [
+            {
+              "StartLine": 484,
+              "EndLine": 488
+            }
+          ]
+        },
+        {
+          "ID": "dtrace-provider@0.8.7",
+          "Name": "dtrace-provider",
+          "Identifier": {
+            "PURL": "pkg:npm/dtrace-provider@0.8.7",
+            "UID": "653e974cb2d3e9ad"
+          },
+          "Version": "0.8.7",
+          "DependsOn": [
+            "nan@2.11.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 489,
+              "EndLine": 497
+            }
+          ]
+        },
+        {
+          "ID": "ecc-jsbn@0.1.2",
+          "Name": "ecc-jsbn",
+          "Identifier": {
+            "PURL": "pkg:npm/ecc-jsbn@0.1.2",
+            "UID": "a4bb029d1eb5b4a"
+          },
+          "Version": "0.1.2",
+          "DependsOn": [
+            "jsbn@0.1.1",
+            "safer-buffer@2.1.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 533,
+              "EndLine": 541
+            }
+          ]
+        },
+        {
+          "ID": "escape-regexp-component@1.0.2",
+          "Name": "escape-regexp-component",
+          "Identifier": {
+            "PURL": "pkg:npm/escape-regexp-component@1.0.2",
+            "UID": "406897d9803e1702"
+          },
+          "Version": "1.0.2",
+          "Locations": [
+            {
+              "StartLine": 562,
+              "EndLine": 566
+            }
+          ]
+        },
+        {
+          "ID": "esprima@4.0.1",
+          "Name": "esprima",
+          "Identifier": {
+            "PURL": "pkg:npm/esprima@4.0.1",
+            "UID": "d7349c616cfaddd9"
+          },
+          "Version": "4.0.1",
+          "Locations": [
+            {
+              "StartLine": 573,
+              "EndLine": 577
+            }
+          ]
+        },
+        {
+          "ID": "ewma@2.0.1",
+          "Name": "ewma",
+          "Identifier": {
+            "PURL": "pkg:npm/ewma@2.0.1",
+            "UID": "dbe890a2957167b0"
+          },
+          "Version": "2.0.1",
+          "DependsOn": [
+            "assert-plus@1.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 578,
+              "EndLine": 585
+            }
+          ]
+        },
+        {
+          "ID": "extsprintf@1.2.0",
+          "Name": "extsprintf",
+          "Identifier": {
+            "PURL": "pkg:npm/extsprintf@1.2.0",
+            "UID": "a484234a40e27754"
+          },
+          "Version": "1.2.0",
+          "Locations": [
+            {
+              "StartLine": 2819,
+              "EndLine": 2823
+            }
+          ]
+        },
+        {
+          "ID": "extsprintf@1.3.0",
+          "Name": "extsprintf",
+          "Identifier": {
+            "PURL": "pkg:npm/extsprintf@1.3.0",
+            "UID": "f597149ff6dbad4c"
+          },
+          "Version": "1.3.0",
+          "Locations": [
+            {
+              "StartLine": 731,
+              "EndLine": 735
+            }
+          ]
+        },
+        {
+          "ID": "fast-decode-uri-component@1.0.0",
+          "Name": "fast-decode-uri-component",
+          "Identifier": {
+            "PURL": "pkg:npm/fast-decode-uri-component@1.0.0",
+            "UID": "1e3e1fb35b66d7cf"
+          },
+          "Version": "1.0.0",
+          "Locations": [
+            {
+              "StartLine": 747,
+              "EndLine": 751
+            }
+          ]
+        },
+        {
+          "ID": "find-my-way@1.15.4",
+          "Name": "find-my-way",
+          "Identifier": {
+            "PURL": "pkg:npm/find-my-way@1.15.4",
+            "UID": "f8c36149bcb3e3bb"
+          },
+          "Version": "1.15.4",
+          "DependsOn": [
+            "fast-decode-uri-component@1.0.0",
+            "safe-regex@1.1.0",
+            "semver-store@0.3.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 781,
+              "EndLine": 790
+            }
+          ]
+        },
+        {
+          "ID": "formidable@1.2.1",
+          "Name": "formidable",
+          "Identifier": {
+            "PURL": "pkg:npm/formidable@1.2.1",
+            "UID": "c56426b70fe53d99"
+          },
+          "Version": "1.2.1",
+          "Locations": [
+            {
+              "StartLine": 843,
+              "EndLine": 847
+            }
+          ]
+        },
+        {
+          "ID": "getpass@0.1.7",
+          "Name": "getpass",
+          "Identifier": {
+            "PURL": "pkg:npm/getpass@0.1.7",
+            "UID": "da74c645d7f701af"
+          },
+          "Version": "0.1.7",
+          "DependsOn": [
+            "assert-plus@1.0.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 872,
+              "EndLine": 879
+            }
+          ]
+        },
+        {
+          "ID": "glob@6.0.4",
+          "Name": "glob",
+          "Identifier": {
+            "PURL": "pkg:npm/glob@6.0.4",
+            "UID": "564f41751ba5c42b"
+          },
+          "Version": "6.0.4",
+          "DependsOn": [
+            "inflight@1.0.6",
+            "inherits@2.0.3",
+            "minimatch@3.0.4",
+            "once@1.4.0",
+            "path-is-absolute@1.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 880,
+              "EndLine": 892
+            }
+          ]
+        },
+        {
+          "ID": "handle-thing@1.2.5",
+          "Name": "handle-thing",
+          "Identifier": {
+            "PURL": "pkg:npm/handle-thing@1.2.5",
+            "UID": "72e93fba599b1131"
+          },
+          "Version": "1.2.5",
+          "Locations": [
+            {
+              "StartLine": 1173,
+              "EndLine": 1177
+            }
+          ]
+        },
+        {
+          "ID": "hpack.js@2.1.6",
+          "Name": "hpack.js",
+          "Identifier": {
+            "PURL": "pkg:npm/hpack.js@2.1.6",
+            "UID": "153a3b89d3574b23"
+          },
+          "Version": "2.1.6",
+          "DependsOn": [
+            "inherits@2.0.3",
+            "obuf@1.1.2",
+            "readable-stream@2.3.6",
+            "wbuf@1.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1237,
+              "EndLine": 1247
+            }
+          ]
+        },
+        {
+          "ID": "http-deceiver@1.2.7",
+          "Name": "http-deceiver",
+          "Identifier": {
+            "PURL": "pkg:npm/http-deceiver@1.2.7",
+            "UID": "dc660be6a31db331"
+          },
+          "Version": "1.2.7",
+          "Locations": [
+            {
+              "StartLine": 1248,
+              "EndLine": 1252
+            }
+          ]
+        },
+        {
+          "ID": "http-signature@1.2.0",
+          "Name": "http-signature",
+          "Identifier": {
+            "PURL": "pkg:npm/http-signature@1.2.0",
+            "UID": "e3e6d4031c77ef74"
+          },
+          "Version": "1.2.0",
+          "DependsOn": [
+            "assert-plus@1.0.0",
+            "jsprim@1.4.1",
+            "sshpk@1.15.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1253,
+              "EndLine": 1262
+            }
+          ]
+        },
+        {
+          "ID": "inflight@1.0.6",
+          "Name": "inflight",
+          "Identifier": {
+            "PURL": "pkg:npm/inflight@1.0.6",
+            "UID": "7a5a1fc2d7134497"
+          },
+          "Version": "1.0.6",
+          "DependsOn": [
+            "once@1.4.0",
+            "wrappy@1.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1263,
+              "EndLine": 1271
+            }
+          ]
+        },
+        {
+          "ID": "inherits@2.0.3",
+          "Name": "inherits",
+          "Identifier": {
+            "PURL": "pkg:npm/inherits@2.0.3",
+            "UID": "cf226d004d0101bc"
+          },
+          "Version": "2.0.3",
+          "Locations": [
+            {
+              "StartLine": 1272,
+              "EndLine": 1276
+            }
+          ]
+        },
+        {
+          "ID": "isarray@1.0.0",
+          "Name": "isarray",
+          "Identifier": {
+            "PURL": "pkg:npm/isarray@1.0.0",
+            "UID": "3c0c88cc31e96536"
+          },
+          "Version": "1.0.0",
+          "Locations": [
+            {
+              "StartLine": 1444,
+              "EndLine": 1448
+            }
+          ]
+        },
+        {
+          "ID": "js-yaml@3.10.0",
+          "Name": "js-yaml",
+          "Identifier": {
+            "PURL": "pkg:npm/js-yaml@3.10.0",
+            "UID": "9042b5781d144235"
+          },
+          "Version": "3.10.0",
+          "DependsOn": [
+            "argparse@1.0.10",
+            "esprima@4.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1461,
+              "EndLine": 1469
+            }
+          ]
+        },
+        {
+          "ID": "jsbn@0.1.1",
+          "Name": "jsbn",
+          "Identifier": {
+            "PURL": "pkg:npm/jsbn@0.1.1",
+            "UID": "8007093b2c18fe25"
+          },
+          "Version": "0.1.1",
+          "Locations": [
+            {
+              "StartLine": 1470,
+              "EndLine": 1474
+            }
+          ]
+        },
+        {
+          "ID": "json-schema@0.2.3",
+          "Name": "json-schema",
+          "Identifier": {
+            "PURL": "pkg:npm/json-schema@0.2.3",
+            "UID": "29c3d89dfe58ee38"
+          },
+          "Version": "0.2.3",
+          "Locations": [
+            {
+              "StartLine": 1475,
+              "EndLine": 1479
+            }
+          ]
+        },
+        {
+          "ID": "jsprim@1.4.1",
+          "Name": "jsprim",
+          "Identifier": {
+            "PURL": "pkg:npm/jsprim@1.4.1",
+            "UID": "d4740816a6e6e783"
+          },
+          "Version": "1.4.1",
+          "DependsOn": [
+            "assert-plus@1.0.0",
+            "extsprintf@1.3.0",
+            "json-schema@0.2.3",
+            "verror@1.10.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1480,
+              "EndLine": 1490
+            }
+          ]
+        },
+        {
+          "ID": "lodash@4.17.11",
+          "Name": "lodash",
+          "Identifier": {
+            "PURL": "pkg:npm/lodash@4.17.11",
+            "UID": "48cbbed12dd2bd2"
+          },
+          "Version": "4.17.11",
+          "Locations": [
+            {
+              "StartLine": 1513,
+              "EndLine": 1517
+            }
+          ]
+        },
+        {
+          "ID": "lodash.get@4.4.2",
+          "Name": "lodash.get",
+          "Identifier": {
+            "PURL": "pkg:npm/lodash.get@4.4.2",
+            "UID": "3a62131590e961cb"
+          },
+          "Version": "4.4.2",
+          "Locations": [
+            {
+              "StartLine": 1593,
+              "EndLine": 1597
+            }
+          ]
+        },
+        {
+          "ID": "lru-cache@4.1.3",
+          "Name": "lru-cache",
+          "Identifier": {
+            "PURL": "pkg:npm/lru-cache@4.1.3",
+            "UID": "e93775b2b126f005"
+          },
+          "Version": "4.1.3",
+          "DependsOn": [
+            "pseudomap@1.0.2",
+            "yallist@2.1.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1666,
+              "EndLine": 1674
+            }
+          ]
+        },
+        {
+          "ID": "mime@1.6.0",
+          "Name": "mime",
+          "Identifier": {
+            "PURL": "pkg:npm/mime@1.6.0",
+            "UID": "e3341cde1731201e"
+          },
+          "Version": "1.6.0",
+          "Locations": [
+            {
+              "StartLine": 1720,
+              "EndLine": 1724
+            }
+          ]
+        },
+        {
+          "ID": "minimalistic-assert@1.0.1",
+          "Name": "minimalistic-assert",
+          "Identifier": {
+            "PURL": "pkg:npm/minimalistic-assert@1.0.1",
+            "UID": "aaff9f5413ee0a1c"
+          },
+          "Version": "1.0.1",
+          "Locations": [
+            {
+              "StartLine": 1725,
+              "EndLine": 1729
+            }
+          ]
+        },
+        {
+          "ID": "minimatch@3.0.4",
+          "Name": "minimatch",
+          "Identifier": {
+            "PURL": "pkg:npm/minimatch@3.0.4",
+            "UID": "9fbdb5178bb0b12"
+          },
+          "Version": "3.0.4",
+          "DependsOn": [
+            "brace-expansion@1.1.11"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1730,
+              "EndLine": 1737
+            }
+          ]
+        },
+        {
+          "ID": "minimist@0.0.8",
+          "Name": "minimist",
+          "Identifier": {
+            "PURL": "pkg:npm/minimist@0.0.8",
+            "UID": "80fe35c34da52b96"
+          },
+          "Version": "0.0.8",
+          "Locations": [
+            {
+              "StartLine": 1738,
+              "EndLine": 1742
+            }
+          ]
+        },
+        {
+          "ID": "mkdirp@0.5.1",
+          "Name": "mkdirp",
+          "Identifier": {
+            "PURL": "pkg:npm/mkdirp@0.5.1",
+            "UID": "fbf5756c3a959d27"
+          },
+          "Version": "0.5.1",
+          "DependsOn": [
+            "minimist@0.0.8"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1764,
+              "EndLine": 1771
+            }
+          ]
+        },
+        {
+          "ID": "moment@2.22.2",
+          "Name": "moment",
+          "Identifier": {
+            "PURL": "pkg:npm/moment@2.22.2",
+            "UID": "7ea6f38ca4c824f4"
+          },
+          "Version": "2.22.2",
+          "Locations": [
+            {
+              "StartLine": 1772,
+              "EndLine": 1777
+            }
+          ]
+        },
+        {
+          "ID": "ms@2.0.0",
+          "Name": "ms",
+          "Identifier": {
+            "PURL": "pkg:npm/ms@2.0.0",
+            "UID": "89cb54d42dd58498"
+          },
+          "Version": "2.0.0",
+          "Locations": [
+            {
+              "StartLine": 1778,
+              "EndLine": 1782
+            }
+          ]
+        },
+        {
+          "ID": "mv@2.1.1",
+          "Name": "mv",
+          "Identifier": {
+            "PURL": "pkg:npm/mv@2.1.1",
+            "UID": "c47045cbad212461"
+          },
+          "Version": "2.1.1",
+          "DependsOn": [
+            "mkdirp@0.5.1",
+            "ncp@2.0.0",
+            "rimraf@2.4.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1792,
+              "EndLine": 1802
+            }
+          ]
+        },
+        {
+          "ID": "nan@2.11.1",
+          "Name": "nan",
+          "Identifier": {
+            "PURL": "pkg:npm/nan@2.11.1",
+            "UID": "c357492f5e33f421"
+          },
+          "Version": "2.11.1",
+          "Locations": [
+            {
+              "StartLine": 1803,
+              "EndLine": 1808
+            }
+          ]
+        },
+        {
+          "ID": "ncp@2.0.0",
+          "Name": "ncp",
+          "Identifier": {
+            "PURL": "pkg:npm/ncp@2.0.0",
+            "UID": "2c39aef201ae8173"
+          },
+          "Version": "2.0.0",
+          "Locations": [
+            {
+              "StartLine": 1834,
+              "EndLine": 1839
+            }
+          ]
+        },
+        {
+          "ID": "negotiator@0.6.1",
+          "Name": "negotiator",
+          "Identifier": {
+            "PURL": "pkg:npm/negotiator@0.6.1",
+            "UID": "cd52b3721b97981c"
+          },
+          "Version": "0.6.1",
+          "Locations": [
+            {
+              "StartLine": 1840,
+              "EndLine": 1844
+            }
+          ]
+        },
+        {
+          "ID": "node-config-manager@2.0.0",
+          "Name": "node-config-manager",
+          "Identifier": {
+            "PURL": "pkg:npm/node-config-manager@2.0.0",
+            "UID": "18eebb680fd67a9a"
+          },
+          "Version": "2.0.0",
+          "DependsOn": [
+            "debug@3.1.0",
+            "js-yaml@3.10.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1845,
+              "EndLine": 1853
+            }
+          ]
+        },
+        {
+          "ID": "obuf@1.1.2",
+          "Name": "obuf",
+          "Identifier": {
+            "PURL": "pkg:npm/obuf@1.1.2",
+            "UID": "af6f380948e2c50f"
+          },
+          "Version": "1.1.2",
+          "Locations": [
+            {
+              "StartLine": 1931,
+              "EndLine": 1935
+            }
+          ]
+        },
+        {
+          "ID": "once@1.4.0",
+          "Name": "once",
+          "Identifier": {
+            "PURL": "pkg:npm/once@1.4.0",
+            "UID": "d77dcfef514153f6"
+          },
+          "Version": "1.4.0",
+          "DependsOn": [
+            "wrappy@1.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1936,
+              "EndLine": 1943
+            }
+          ]
+        },
+        {
+          "ID": "path-is-absolute@1.0.1",
+          "Name": "path-is-absolute",
+          "Identifier": {
+            "PURL": "pkg:npm/path-is-absolute@1.0.1",
+            "UID": "320a9a5991d3e883"
+          },
+          "Version": "1.0.1",
+          "Locations": [
+            {
+              "StartLine": 1990,
+              "EndLine": 1995
+            }
+          ]
+        },
+        {
+          "ID": "pidusage@1.2.0",
+          "Name": "pidusage",
+          "Identifier": {
+            "PURL": "pkg:npm/pidusage@1.2.0",
+            "UID": "f7eef15e16e5ee77"
+          },
+          "Version": "1.2.0",
+          "Locations": [
+            {
+              "StartLine": 2017,
+              "EndLine": 2021
+            }
+          ]
+        },
+        {
+          "ID": "process-nextick-args@2.0.0",
+          "Name": "process-nextick-args",
+          "Identifier": {
+            "PURL": "pkg:npm/process-nextick-args@2.0.0",
+            "UID": "e2508c598c9ca8ce"
+          },
+          "Version": "2.0.0",
+          "Locations": [
+            {
+              "StartLine": 2086,
+              "EndLine": 2090
+            }
+          ]
+        },
+        {
+          "ID": "pseudomap@1.0.2",
+          "Name": "pseudomap",
+          "Identifier": {
+            "PURL": "pkg:npm/pseudomap@1.0.2",
+            "UID": "5d18311ccde947e9"
+          },
+          "Version": "1.0.2",
+          "Locations": [
+            {
+              "StartLine": 2091,
+              "EndLine": 2095
+            }
+          ]
+        },
+        {
+          "ID": "qs@6.5.2",
+          "Name": "qs",
+          "Identifier": {
+            "PURL": "pkg:npm/qs@6.5.2",
+            "UID": "70c1d4dd7e31e678"
+          },
+          "Version": "6.5.2",
+          "Locations": [
+            {
+              "StartLine": 2096,
+              "EndLine": 2100
+            }
+          ]
+        },
+        {
+          "ID": "readable-stream@2.3.6",
+          "Name": "readable-stream",
+          "Identifier": {
+            "PURL": "pkg:npm/readable-stream@2.3.6",
+            "UID": "d1bdd51def0ea1f5"
+          },
+          "Version": "2.3.6",
+          "DependsOn": [
+            "core-util-is@1.0.2",
+            "inherits@2.0.3",
+            "isarray@1.0.0",
+            "process-nextick-args@2.0.0",
+            "safe-buffer@5.1.2",
+            "string_decoder@1.1.1",
+            "util-deprecate@1.0.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2122,
+              "EndLine": 2135
+            }
+          ]
+        },
+        {
+          "ID": "restify@7.2.3",
+          "Name": "restify",
+          "Identifier": {
+            "PURL": "pkg:npm/restify@7.2.3",
+            "UID": "ea0f9425277dd11e"
+          },
+          "Version": "7.2.3",
+          "DependsOn": [
+            "assert-plus@1.0.0",
+            "bunyan@1.8.12",
+            "csv@1.2.1",
+            "dtrace-provider@0.8.7",
+            "escape-regexp-component@1.0.2",
+            "ewma@2.0.1",
+            "find-my-way@1.15.4",
+            "formidable@1.2.1",
+            "http-signature@1.2.0",
+            "lodash@4.17.11",
+            "lru-cache@4.1.3",
+            "mime@1.6.0",
+            "negotiator@0.6.1",
+            "once@1.4.0",
+            "pidusage@1.2.0",
+            "qs@6.5.2",
+            "restify-errors@5.0.0",
+            "semver@5.6.0",
+            "spdy@3.4.7",
+            "uuid@3.3.2",
+            "vasync@1.6.4",
+            "verror@1.10.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2198,
+              "EndLine": 2226
+            }
+          ]
+        },
+        {
+          "ID": "restify-errors@5.0.0",
+          "Name": "restify-errors",
+          "Identifier": {
+            "PURL": "pkg:npm/restify-errors@5.0.0",
+            "UID": "e64fe0029e6a1217"
+          },
+          "Version": "5.0.0",
+          "DependsOn": [
+            "assert-plus@1.0.0",
+            "lodash@4.17.11",
+            "safe-json-stringify@1.2.0",
+            "verror@1.10.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2227,
+              "EndLine": 2237
+            }
+          ]
+        },
+        {
+          "ID": "ret@0.1.15",
+          "Name": "ret",
+          "Identifier": {
+            "PURL": "pkg:npm/ret@0.1.15",
+            "UID": "5411d4241b679011"
+          },
+          "Version": "0.1.15",
+          "Locations": [
+            {
+              "StartLine": 2238,
+              "EndLine": 2242
+            }
+          ]
+        },
+        {
+          "ID": "rimraf@2.4.5",
+          "Name": "rimraf",
+          "Identifier": {
+            "PURL": "pkg:npm/rimraf@2.4.5",
+            "UID": "e15073e77ea4c10c"
+          },
+          "Version": "2.4.5",
+          "DependsOn": [
+            "glob@6.0.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2243,
+              "EndLine": 2251
+            }
+          ]
+        },
+        {
+          "ID": "safe-buffer@5.1.2",
+          "Name": "safe-buffer",
+          "Identifier": {
+            "PURL": "pkg:npm/safe-buffer@5.1.2",
+            "UID": "c1a82747d7a6a064"
+          },
+          "Version": "5.1.2",
+          "Locations": [
+            {
+              "StartLine": 2252,
+              "EndLine": 2256
+            }
+          ]
+        },
+        {
+          "ID": "safe-json-stringify@1.2.0",
+          "Name": "safe-json-stringify",
+          "Identifier": {
+            "PURL": "pkg:npm/safe-json-stringify@1.2.0",
+            "UID": "5fe758ea9fc054d3"
+          },
+          "Version": "1.2.0",
+          "Locations": [
+            {
+              "StartLine": 2257,
+              "EndLine": 2262
+            }
+          ]
+        },
+        {
+          "ID": "safe-regex@1.1.0",
+          "Name": "safe-regex",
+          "Identifier": {
+            "PURL": "pkg:npm/safe-regex@1.1.0",
+            "UID": "d2bd50b22052dff1"
+          },
+          "Version": "1.1.0",
+          "DependsOn": [
+            "ret@0.1.15"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2263,
+              "EndLine": 2270
+            }
+          ]
+        },
+        {
+          "ID": "safer-buffer@2.1.2",
+          "Name": "safer-buffer",
+          "Identifier": {
+            "PURL": "pkg:npm/safer-buffer@2.1.2",
+            "UID": "899fdb0a8a815d47"
+          },
+          "Version": "2.1.2",
+          "Locations": [
+            {
+              "StartLine": 2271,
+              "EndLine": 2275
+            }
+          ]
+        },
+        {
+          "ID": "select-hose@2.0.0",
+          "Name": "select-hose",
+          "Identifier": {
+            "PURL": "pkg:npm/select-hose@2.0.0",
+            "UID": "8b9a4d64f8fe469"
+          },
+          "Version": "2.0.0",
+          "Locations": [
+            {
+              "StartLine": 2276,
+              "EndLine": 2280
+            }
+          ]
+        },
+        {
+          "ID": "semver@5.6.0",
+          "Name": "semver",
+          "Identifier": {
+            "PURL": "pkg:npm/semver@5.6.0",
+            "UID": "8e43dbb0d096a0b8"
+          },
+          "Version": "5.6.0",
+          "Locations": [
+            {
+              "StartLine": 2281,
+              "EndLine": 2285
+            }
+          ]
+        },
+        {
+          "ID": "semver-store@0.3.0",
+          "Name": "semver-store",
+          "Identifier": {
+            "PURL": "pkg:npm/semver-store@0.3.0",
+            "UID": "8310c3e3db12e33f"
+          },
+          "Version": "0.3.0",
+          "Locations": [
+            {
+              "StartLine": 2286,
+              "EndLine": 2290
+            }
+          ]
+        },
+        {
+          "ID": "spdy@3.4.7",
+          "Name": "spdy",
+          "Identifier": {
+            "PURL": "pkg:npm/spdy@3.4.7",
+            "UID": "d4102dc2d7c8383c"
+          },
+          "Version": "3.4.7",
+          "DependsOn": [
+            "debug@2.6.9",
+            "handle-thing@1.2.5",
+            "http-deceiver@1.2.7",
+            "safe-buffer@5.1.2",
+            "select-hose@2.0.0",
+            "spdy-transport@2.1.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2473,
+              "EndLine": 2495
+            }
+          ]
+        },
+        {
+          "ID": "spdy-transport@2.1.1",
+          "Name": "spdy-transport",
+          "Identifier": {
+            "PURL": "pkg:npm/spdy-transport@2.1.1",
+            "UID": "743b4480efb53b63"
+          },
+          "Version": "2.1.1",
+          "DependsOn": [
+            "debug@2.6.9",
+            "detect-node@2.0.4",
+            "hpack.js@2.1.6",
+            "obuf@1.1.2",
+            "readable-stream@2.3.6",
+            "safe-buffer@5.1.2",
+            "wbuf@1.7.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2496,
+              "EndLine": 2519
+            }
+          ]
+        },
+        {
+          "ID": "sprintf-js@1.0.3",
+          "Name": "sprintf-js",
+          "Identifier": {
+            "PURL": "pkg:npm/sprintf-js@1.0.3",
+            "UID": "f5ee83fd10972692"
+          },
+          "Version": "1.0.3",
+          "Locations": [
+            {
+              "StartLine": 2529,
+              "EndLine": 2533
+            }
+          ]
+        },
+        {
+          "ID": "sshpk@1.15.2",
+          "Name": "sshpk",
+          "Identifier": {
+            "PURL": "pkg:npm/sshpk@1.15.2",
+            "UID": "2c1560bd457e5191"
+          },
+          "Version": "1.15.2",
+          "DependsOn": [
+            "asn1@0.2.4",
+            "assert-plus@1.0.0",
+            "bcrypt-pbkdf@1.0.2",
+            "dashdash@1.14.1",
+            "ecc-jsbn@0.1.2",
+            "getpass@0.1.7",
+            "jsbn@0.1.1",
+            "safer-buffer@2.1.2",
+            "tweetnacl@0.14.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2534,
+              "EndLine": 2549
+            }
+          ]
+        },
+        {
+          "ID": "stream-transform@0.2.2",
+          "Name": "stream-transform",
+          "Identifier": {
+            "PURL": "pkg:npm/stream-transform@0.2.2",
+            "UID": "dbeb36db0db6e2ce"
+          },
+          "Version": "0.2.2",
+          "Locations": [
+            {
+              "StartLine": 2577,
+              "EndLine": 2581
+            }
+          ]
+        },
+        {
+          "ID": "string_decoder@1.1.1",
+          "Name": "string_decoder",
+          "Identifier": {
+            "PURL": "pkg:npm/string_decoder@1.1.1",
+            "UID": "d5822a555f25e0d4"
+          },
+          "Version": "1.1.1",
+          "DependsOn": [
+            "safe-buffer@5.1.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2582,
+              "EndLine": 2589
+            }
+          ]
+        },
+        {
+          "ID": "tweetnacl@0.14.5",
+          "Name": "tweetnacl",
+          "Identifier": {
+            "PURL": "pkg:npm/tweetnacl@0.14.5",
+            "UID": "454790808a8de376"
+          },
+          "Version": "0.14.5",
+          "Locations": [
+            {
+              "StartLine": 2682,
+              "EndLine": 2686
+            }
+          ]
+        },
+        {
+          "ID": "util-deprecate@1.0.2",
+          "Name": "util-deprecate",
+          "Identifier": {
+            "PURL": "pkg:npm/util-deprecate@1.0.2",
+            "UID": "f72f1974ffd6bf47"
+          },
+          "Version": "1.0.2",
+          "Locations": [
+            {
+              "StartLine": 2792,
+              "EndLine": 2796
+            }
+          ]
+        },
+        {
+          "ID": "uuid@3.3.2",
+          "Name": "uuid",
+          "Identifier": {
+            "PURL": "pkg:npm/uuid@3.3.2",
+            "UID": "703c4d25a68b53ee"
+          },
+          "Version": "3.3.2",
+          "Locations": [
+            {
+              "StartLine": 2797,
+              "EndLine": 2801
+            }
+          ]
+        },
+        {
+          "ID": "vasync@1.6.4",
+          "Name": "vasync",
+          "Identifier": {
+            "PURL": "pkg:npm/vasync@1.6.4",
+            "UID": "3b1c396e9bd592ce"
+          },
+          "Version": "1.6.4",
+          "DependsOn": [
+            "verror@1.6.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2811,
+              "EndLine": 2833
+            }
+          ]
+        },
+        {
+          "ID": "verror@1.10.0",
+          "Name": "verror",
+          "Identifier": {
+            "PURL": "pkg:npm/verror@1.10.0",
+            "UID": "2b9a5da620cd4132"
+          },
+          "Version": "1.10.0",
+          "DependsOn": [
+            "assert-plus@1.0.0",
+            "core-util-is@1.0.2",
+            "extsprintf@1.3.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2834,
+              "EndLine": 2843
+            }
+          ]
+        },
+        {
+          "ID": "verror@1.6.0",
+          "Name": "verror",
+          "Identifier": {
+            "PURL": "pkg:npm/verror@1.6.0",
+            "UID": "ce7ca1a07ad1dced"
+          },
+          "Version": "1.6.0",
+          "DependsOn": [
+            "extsprintf@1.2.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2824,
+              "EndLine": 2831
+            }
+          ]
+        },
+        {
+          "ID": "wbuf@1.7.3",
+          "Name": "wbuf",
+          "Identifier": {
+            "PURL": "pkg:npm/wbuf@1.7.3",
+            "UID": "5d49062f86dabbe4"
+          },
+          "Version": "1.7.3",
+          "DependsOn": [
+            "minimalistic-assert@1.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2923,
+              "EndLine": 2930
+            }
+          ]
+        },
+        {
+          "ID": "wrappy@1.0.2",
+          "Name": "wrappy",
+          "Identifier": {
+            "PURL": "pkg:npm/wrappy@1.0.2",
+            "UID": "4bc177f236237cff"
+          },
+          "Version": "1.0.2",
+          "Locations": [
+            {
+              "StartLine": 2940,
+              "EndLine": 2944
+            }
+          ]
+        },
+        {
+          "ID": "yallist@2.1.2",
+          "Name": "yallist",
+          "Identifier": {
+            "PURL": "pkg:npm/yallist@2.1.2",
+            "UID": "88089cb50d024ce"
+          },
+          "Version": "2.1.2",
+          "Locations": [
+            {
+              "StartLine": 2951,
+              "EndLine": 2955
+            }
+          ]
+        }
+      ]
+    },
     {
       "Target": "env",
       "Class": "secret",
@@ -64,7 +1619,8 @@
               }
             ]
           },
-          "Match": "export GITHUB_PAT=****************************************"
+          "Match": "export GITHUB_PAT=****************************************",
+          "Offset": 63
         }
       ]
     }
