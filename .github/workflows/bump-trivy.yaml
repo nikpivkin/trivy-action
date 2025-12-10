@@ -17,9 +17,12 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Set new version from input
-        run: echo "NEW_VERSION=${{ inputs.trivy_version }}" >> $GITHUB_ENV
+        id: set_version
+        run: echo "new_version=${{ inputs.trivy_version }}" >> "$GITHUB_OUTPUT"
 
       - name: Update Trivy versions
+        env:
+          NEW_VERSION: ${{ steps.set_version.outputs.new_version }}
         run: make bump-trivy
 
       - name: Setup Bats and bats libs
@@ -36,6 +39,11 @@ jobs:
           BATS_LIB_PATH: ${{ steps.setup-bats.outputs.lib-path }}
         run: make update-golden
 
+      - name: Run tests
+        env:
+          BATS_LIB_PATH: ${{ steps.setup-bats.outputs.lib-path }}
+        run: make test
+
       - name: Create PR
         id: create-pr
         uses: peter-evans/create-pull-request@v5
@@ -44,7 +52,7 @@ jobs:
           title: "chore(deps): Update trivy to v${{ inputs.trivy_version }}"
           commit-message: "chore(deps): Update trivy to v${{ inputs.trivy_version }}"
           committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           branch-suffix: timestamp
           branch: bump-trivy
           delete-branch: true
