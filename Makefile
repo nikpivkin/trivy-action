@@ -9,7 +9,8 @@ else
 endif
 
 LOCAL_BIN := $(CURDIR)/.bin
-LOCAL_TRIVY := $(LOCAL_BIN)/trivy
+TRIVY_INSTALL_DIR ?= $(LOCAL_BIN)
+LOCAL_TRIVY := $(TRIVY_INSTALL_DIR)/trivy
 
 ifeq ($(shell [ -f $(LOCAL_TRIVY) ] && [ -z "$(CI)" ] && echo yes),yes)
 TRIVY_CMD := $(LOCAL_TRIVY)
@@ -62,7 +63,7 @@ ensure-trivy:
 	if [ "$$CURRENT_VERSION" != "$(CURRENT_TRIVY_VERSION)" ]; then \
 		echo "Installing Trivy $(CURRENT_TRIVY_VERSION) locally..."; \
 		curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | \
-		sh -s -- -b $(LOCAL_BIN) v$(CURRENT_TRIVY_VERSION); \
+		sh -s -- -b $(TRIVY_INSTALL_DIR) v$(CURRENT_TRIVY_VERSION); \
 	else \
 		echo "Trivy $(CURRENT_TRIVY_VERSION) already present."; \
 	fi
