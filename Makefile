@@ -19,8 +19,8 @@ endif
 
 CACHE_DIR := '.cache'
 
-TRIVY_VERSION_FILE := .github/workflows/test.yaml
-CURRENT_TRIVY_VERSION := $(shell awk '/TRIVY_VERSION:/ {print $$2}' $(TRIVY_VERSION_FILE))
+TRIVY_VERSION_FILE := action.yaml
+CURRENT_TRIVY_VERSION := $(shell yq '.inputs.version.default' $(TRIVY_VERSION_FILE) | tr -d 'v')
 
 BATS_ENV := BATS_LIB_PATH=$(BATS_LIB_PATH) \
 	GITHUB_REPOSITORY_OWNER=aquasecurity \
@@ -46,7 +46,7 @@ bump-trivy:
 	@echo Current version: $(CURRENT_TRIVY_VERSION) ;\
 	echo New version: $$NEW_VERSION ;\
 	$(SED) -i -e "s/$(CURRENT_TRIVY_VERSION)/$$NEW_VERSION/g" \
-		README.md action.yaml $(TRIVY_VERSION_FILE)
+		README.md $(TRIVY_VERSION_FILE)
 
 .PHONY: ensure-trivy
 ensure-trivy:
