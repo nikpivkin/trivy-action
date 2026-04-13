@@ -55,7 +55,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           BRANCH="bump-trivy-${TRIVY_VERSION}"
           git checkout -b "${BRANCH}"
-          git add -A
+          git add action.yaml README.md test/
           git commit -m "chore(deps): Update trivy to v${TRIVY_VERSION}"
           git push origin "${BRANCH}"
           PR_RESPONSE=$(gh api repos/${REPO}/pulls \
