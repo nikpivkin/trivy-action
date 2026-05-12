@@ -14,7 +14,7 @@ permissions: {}
 
 jobs:
   bump:
-    runs-on: ubuntu-2404-2core
+    runs-on: ubuntu-24.04
     permissions: {}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -26,22 +26,22 @@ jobs:
           NEW_VERSION: ${{ inputs.trivy_version }}
         run: make bump-trivy
 
-      - name: Setup Bats and bats libs
-        id: setup-bats
-        uses: bats-core/bats-action@77d6fb60505b4d0d1d73e48bd035b55074bbfb43 # 4.0.0
+      # - name: Setup Bats and bats libs
+      #   id: setup-bats
+      #   uses: bats-core/bats-action@77d6fb60505b4d0d1d73e48bd035b55074bbfb43 # 4.0.0
 
-      - name: Install Trivy
-        run: make ensure-trivy TRIVY_INSTALL_DIR=/usr/local/bin
+      # - name: Install Trivy
+      #   run: make ensure-trivy TRIVY_INSTALL_DIR=/usr/local/bin
 
-      - name: Update golden files
-        env:
-          BATS_LIB_PATH: ${{ steps.setup-bats.outputs.lib-path }}
-        run: make update-golden
+      # - name: Update golden files
+      #   env:
+      #     BATS_LIB_PATH: ${{ steps.setup-bats.outputs.lib-path }}
+      #   run: make update-golden
 
-      - name: Run tests
-        env:
-          BATS_LIB_PATH: ${{ steps.setup-bats.outputs.lib-path }}
-        run: make test
+      # - name: Run tests
+      #   env:
+      #     BATS_LIB_PATH: ${{ steps.setup-bats.outputs.lib-path }}
+      #   run: make test
 
       # Use a GitHub App token because GITHUB_TOKEN does not trigger CI on PRs created by workflows
       - name: Generate token
@@ -53,16 +53,23 @@ jobs:
           owner: ${{ github.repository_owner }}
           repositories: ${{ github.event.repository.name }}
 
-      - name: Create PR
+      - name: Get GitHub App User ID
+        id: get-user-id
+        run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+      - run: |
+          git config --global user.name '${{ steps.app-token.outputs.app-slug }}[bot]'
+          git config --global user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
+          
+      - name: Create PR
+        env:
           TRIVY_VERSION: ${{ inputs.trivy_version }}
           REPO: ${{ github.repository }}
           BASE_BRANCH: ${{ github.event.repository.default_branch }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           gh auth setup-git
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
           BRANCH="bump-trivy-${TRIVY_VERSION}"
           git checkout -b "${BRANCH}"
           git add action.yaml README.md test/
